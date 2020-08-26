@@ -1,0 +1,908 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>导入VNFD · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ns_mano_client.html" />
+    
+    
+    <link rel="prev" href="new-nsd.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GMANO入门</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../cloud/">
+            
+                <a href="../../cloud/">
+            
+                    
+                    CLOUD简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../cloud/juju/">
+            
+                <a href="../../cloud/juju/">
+            
+                    
+                    juju
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    OSM简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../model/">
+            
+                <a href="../model/">
+            
+                    
+                    OSM模型解读
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../model/descriptor/NSD.html">
+            
+                <a href="../model/descriptor/NSD.html">
+            
+                    
+                    NSD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="../model/descriptor/VNFD.html">
+            
+                <a href="../model/descriptor/VNFD.html">
+            
+                    
+                    VNFD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    RO模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="new-nsd.html">
+            
+                <a href="new-nsd.html">
+            
+                    
+                    导入NSD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.2.2" data-path="new-vnfd.html">
+            
+                <a href="new-vnfd.html">
+            
+                    
+                    导入VNFD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3" data-path="ns_mano_client.html">
+            
+                <a href="ns_mano_client.html">
+            
+                    
+                    Client简单说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.4" data-path="ns_new_instance.html">
+            
+                <a href="ns_new_instance.html">
+            
+                    
+                    从零创建一个实例过程说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.5" data-path="ns_instantiation.html">
+            
+                <a href="ns_instantiation.html">
+            
+                    
+                    服务实例化过程变量说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.6" data-path="vim_interaction.html">
+            
+                <a href="vim_interaction.html">
+            
+                    
+                    同VIM交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    OSM参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >导入VNFD</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="newvnfdv3&#x65B9;&#x6CD5;&#x89E3;&#x6790;">new_vnfd_v3&#x65B9;&#x6CD5;&#x89E3;&#x6790;</h1>
+<h2 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h2>
+<p>new_vnfd_v3&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mydb</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>tenant_id</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>vnf_descriptor</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="return">return</h2>
+<p>&#x8FD4;&#x56DE;&#x521B;&#x5EFA;&#x7684;VNFD&#x7684;ids&#x5217;&#x8868;(&#x5373;vnfd_uuid_list)</p>
+<h2 id="&#x521B;&#x5EFA;&#x6D41;&#x7A0B;">&#x521B;&#x5EFA;&#x6D41;&#x7A0B;</h2>
+<p>&#x9996;&#x5148;&#x901A;&#x8FC7;vnfd_catalog.vnfd()&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;vnfd&#x6A21;&#x578B;</p>
+<pre><code class="lang-python">myvnfd = vnfd_catalog.vnfd()
+</code></pre>
+<p>&#x901A;&#x8FC7;pyangbind&#x5C06;&#x4F20;&#x8FC7;&#x6765;&#x7684;vnf_descriptor&#x89E3;&#x6790;&#x6210;json&#x683C;&#x5F0F;&#x5E76;&#x8D4B;&#x503C;&#x7ED9;myvnfd</p>
+<p>&#x7136;&#x540E;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6765;&#x5B58;&#x653E;&#x76F8;&#x5173;&#x5BF9;&#x8C61;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6570;&#x7EC4;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>db_vnfs</td>
+<td>vnf&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>db_ip_profiles</td>
+<td>ip_profiles</td>
+</tr>
+<tr>
+<td>db_nets</td>
+<td>net</td>
+</tr>
+<tr>
+<td>db_vms</td>
+<td>vdu</td>
+</tr>
+<tr>
+<td>db_interfaces</td>
+<td>interface</td>
+</tr>
+<tr>
+<td>db_images</td>
+<td>image</td>
+</tr>
+<tr>
+<td>db_flavors</td>
+<td>flavor</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vnf">vnf</h3>
+<p>&#x901A;&#x8FC7;myvnfd.vnfd_catalog.vnfd.values()&#x5FAA;&#x73AF;&#x83B7;&#x53D6;vnfd_yang</p>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;<code>vnfd_descriptor_list</code> &#x6765;&#x5B58;&#x653E;&#x4ECE;vnfd_catalog_descriptor.get(&quot;vnfd:vnfd&quot;)&#x83B7;&#x53D6;&#x5230;&#x7684;list</p>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;<code>vnfd</code> = vnfd_yang.get()</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>uuid4()&#x968F;&#x673A;&#x6570;</td>
+</tr>
+<tr>
+<td>osm_id</td>
+<td>vnfd.id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>vnfd.name</td>
+</tr>
+<tr>
+<td>description</td>
+<td>vnfd.description</td>
+</tr>
+<tr>
+<td>tenant_id</td>
+<td>&#x4F20;&#x5165;&#x7684;tenant_id</td>
+</tr>
+<tr>
+<td>vendor</td>
+<td>vnfd.vendor</td>
+</tr>
+<tr>
+<td>short_name</td>
+<td>vnfd.short_name</td>
+</tr>
+<tr>
+<td>descriptor</td>
+<td>&#x4F20;&#x5165;&#x7684;vnfd_descriptor</td>
+</tr>
+<tr>
+<td>mgmt_access</td>
+</tr>
+</tbody>
+</table>
+<pre><code>vnfd_uuid_list.append(uuid) &#x8FD9;&#x5C31;&#x662F;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x7684;uuid&#x5217;&#x8868;
+uuid_list.append(uuid)
+</code></pre><h4 id="ipprofile">ip_profile</h4>
+<p>   &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E9B;&#x5B50;&#x7F51;&#x7684;&#x7EC6;&#x8282;</p>
+<ol>
+<li>&#x5728;<code>vnfd_descriptor_list</code>&#x5217;&#x8868;&#x91CC;&#x5BFB;&#x627E;id&#x4E0E;vnfd.id&#x76F8;&#x7B49;&#x7684;<code>vnfd_descriptor</code></li>
+<li>&#x901A;&#x8FC7;vnfd.get(&quot;ip-profiles&quot;)&#x5FAA;&#x73AF;&#x83B7;&#x53D6;<code>ip_profile</code></li>
+<li>&#x5B9A;&#x4E49;params = ip_profile.ip-profile-params</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ip_version</td>
+<td>params.ip-version+params.ipv4</td>
+</tr>
+<tr>
+<td>subnet_address</td>
+<td>params.subnet-address</td>
+</tr>
+<tr>
+<td>gateway_address</td>
+<td>params.gateway-address</td>
+</tr>
+<tr>
+<td>dhcp_enabled</td>
+<td>params.dhcp-params.enabled</td>
+</tr>
+<tr>
+<td>dhcp_start_address</td>
+<td>params.dhcp-params.start-address</td>
+</tr>
+<tr>
+<td>dhcp_count</td>
+<td>params.dhcp-params.count</td>
+</tr>
+<tr>
+<td>dns_address</td>
+<td>params.dns-server&#x6570;&#x7EC4;&#x901A;&#x8FC7;&#x201C;&#xFF1B;&#x201D;&#x8FDE;&#x63A5;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>security_group</td>
+<td>&#x6709;params.security-group&#x8BDD;</td>
+</tr>
+<tr>
+<td>net_id</td>
+<td>net_uuid</td>
+</tr>
+</tbody>
+</table>
+<pre><code>ip_profile_name2db_table_index[str(ip_profile[&quot;name&quot;])] = db_ip_profiles_index
+db_ip_profiles_index += 1
+</code></pre><h4 id="net">net</h4>
+<ol>
+<li>&#x901A;&#x8FC7;vnfd.get(&quot;internal-vld&quot;)&#x5FAA;&#x73AF;&#x83B7;&#x53D6;<code>vld</code></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>vld.name</td>
+</tr>
+<tr>
+<td>vnf_id</td>
+<td>&#x5173;&#x8054;vnf.uuid</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>uuid4()&#x968F;&#x673A;&#x6570;</td>
+</tr>
+<tr>
+<td>description</td>
+<td>vld.description</td>
+</tr>
+<tr>
+<td>osm_id</td>
+<td>vld.id</td>
+</tr>
+<tr>
+<td>type</td>
+<td>&quot;bridge&quot;  #depending on connection point type</td>
+</tr>
+</tbody>
+</table>
+<pre><code>uuid_list.append(uuid)
+</code></pre><p>   &#x5173;&#x8054; db_ip_profile with db_sce_net</p>
+<ol>
+<li><p>&#x5982;&#x679C;vld&#x4E2D;&#x5B58;&#x5728;<code>ip-profile-ref</code>&#xFF1A;<code>ip_profile_name</code></p>
+<p>&#x5982;&#x679C;&#x5728;ip_profile_name2db_table_index&#x6CA1;&#x53D1;&#x73B0;<code>ip_profile_name</code>&#x5219;&#x8FD4;&#x56DE;</p>
+<p>&#x5982;&#x679C;&#x53D1;&#x73B0;&#x7684;&#x8BDD;&#x5219;&#x66F4;&#x65B0;ip_profile.net_id = net.uuid</p>
+</li>
+<li><p>&#x5982;&#x679C;vld&#x4E2D;&#x4E0D;&#x5B58;&#x5728;<code>ip-profile-ref</code>&#xFF0C;&#x5219;&#x53BB;&#x68C0;&#x67E5;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;ip-address</p>
+<pre><code>for icp in vld.get(&quot;internal-connection-point&quot;).values():
+</code></pre><p>&#x5982;&#x679C;icp&#x4E2D;&#x5B58;&#x5728;ip-address&#xFF0C;&#x5219;&#x8FD4;&#x56DE;</p>
+</li>
+</ol>
+<h4 id="vdu">vdu</h4>
+<p>&#x901A;&#x8FC7;vnfd.get(&quot;vdu&quot;)&#x5FAA;&#x73AF;&#x83B7;&#x53D6;vdu</p>
+<p>&#x5728;vnfd_descriptor.vdu&#x5217;&#x8868;&#x91CC;&#x5BFB;&#x627E;id&#x4E0E;vdu.id&#x76F8;&#x7B49;&#x7684;<code>vdu_descriptor</code></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>uuid4()&#x968F;&#x673A;&#x6570;</td>
+</tr>
+<tr>
+<td>osm.id</td>
+<td>vdu.id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>vdu.name</td>
+</tr>
+<tr>
+<td>description</td>
+<td>vdu.description</td>
+</tr>
+<tr>
+<td>pdu_type</td>
+<td>vdu.pdu_type</td>
+</tr>
+<tr>
+<td>vnf_id</td>
+<td>&#x5173;&#x8054;vnf.uuid</td>
+</tr>
+<tr>
+<td>count</td>
+<td>&#x5982;&#x679C;&#x6709;vdu.count</td>
+</tr>
+<tr>
+<td>flavor_id</td>
+<td></td>
+</tr>
+<tr>
+<td>image_id</td>
+<td>&#x5982;&#x679C;&#x6709;vdu.image&#x5219;&#x53BB;&#x67E5;&#x627E;image_uuid&#xFF0C;&#x6CA1;&#x627E;&#x5230;image_uuid&#xFF0C;&#x5C31;&#x65B0;&#x5EFA;image_uuid&#xFF0C;&#x8FC7;&#x7A0B;&#x89C1;&#x4E0B;&#x65B9;</td>
+</tr>
+<tr>
+<td>image_list</td>
+<td>&#x6570;&#x7EC4;&#x91CC;&#x9762;&#x653E;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x89C1;&#x4E0B;&#x65B9;</td>
+</tr>
+<tr>
+<td>boot_data</td>
+<td>&#x89C1;cloud-init</td>
+</tr>
+</tbody>
+</table>
+<pre><code>uuid_list.append(uuid)
+</code></pre><h5 id="image">image</h5>
+<p>1&#x3001;&#x5982;&#x679C;&#x5B58;&#x5728;vdu.get(&quot;image&quot;)&#x5219;&#x53BB;&#x67E5;&#x627E;&#xFF1F;&#x83B7;&#x53D6;image_uuid</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x83B7;&#x53D6;&#x5230;image_uuid</p>
+<pre><code>image_uuid = db_image[&quot;uuid&quot;]
+db_images.append(db_image)
+</code></pre><p>&#x6700;&#x540E;vdu.image_id=image_uuid</p>
+<p>2&#x3001;&#x5982;&#x679C;&#x5B58;&#x5728;vdu.get(&quot;alternative-images&quot;)&#xFF0C;&#x4E0E;&#x4E0A;&#x65B9;image&#x8FC7;&#x7A0B;&#x76F8;&#x540C;</p>
+<pre><code>&#x6700;&#x540E;vdu.image_list = [{
+                        &quot;image_id&quot;: image_uuid,
+                        &quot;vim_type&quot;: str(alt_image[&quot;vim-type&quot;]),
+                  }]
+</code></pre><table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>descriptor.image</td>
+</tr>
+<tr>
+<td>checksum</td>
+<td>descriptor.image-checksum</td>
+</tr>
+<tr>
+<td>location</td>
+<td></td>
+</tr>
+<tr>
+<td>universal_name</td>
+<td></td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>uuid4()&#x968F;&#x673A;&#x6570;(&#x5F53;&#x6570;&#x636E;&#x5E93;&#x6CA1;&#x627E;&#x5230;&#x8FD9;&#x4E2A;image)</td>
+</tr>
+</tbody>
+</table>
+<p>3&#x3001;volumes</p>
+<p>&#x5982;&#x679C;&#x5B58;&#x5728;vdu.get(&quot;volumes&quot;)&#xFF0C;&#x901A;&#x8FC7;vdu.get(&quot;volumes&quot;)&#x5FAA;&#x73AF;&#x83B7;&#x53D6;volume</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;vdu.get(&quot;image&quot;)&#xFF0C;&#x5219;&#x548C;&#x6B65;&#x9AA4;&#x4E00;&#x4E00;&#x6837;</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;vdu.get(&quot;image&quot;)&#xFF0C;&#x5219;Add Openmano devices</p>
+<h5 id="cloud-init">cloud-init</h5>
+<p>Cloud-init&#x901A;&#x5E38;&#x7528;&#x4E8E;Day-0&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x8BED;&#x8A00;&#x73AF;&#x5883;</li>
+<li>&#x8BBE;&#x7F6E;&#x5B9E;&#x4F8B;&#x4E3B;&#x673A;&#x540D;</li>
+<li>&#x751F;&#x6210;&#x5B9E;&#x4F8B;SSH&#x79C1;&#x94A5;&#x6216;&#x5B9A;&#x4E49;&#x5BC6;&#x7801;</li>
+<li>&#x5C06;SSH&#x5BC6;&#x94A5;&#x6DFB;&#x52A0;&#x5230;&#x7528;&#x6237;&#x7684;.ssh / authorized_keys&#x4E2D;&#xFF0C;&#x4EE5;&#x4FBF;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x767B;&#x5F55;</li>
+<li>&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x6302;&#x8F7D;&#x70B9;</li>
+<li>&#x914D;&#x7F6E;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;</li>
+<li>&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x548C;&#x7EC4;</li>
+<li>&#x6DFB;&#x52A0;&#x6587;&#x4EF6;</li>
+</ul>
+<pre><code>boot_data = {}
+</code></pre><p>&#x5BF9;&#x4E8E;&#x5185;&#x90E8;cloud-init&#x5B9A;&#x4E49;cloud-init</p>
+<p>boot_data.user-data = vdu.cloud-init</p>
+<p>&#x5BF9;&#x4E8E;&#x5916;&#x90E8;cloud-init&#x5B9A;&#x4E49;cloud-init-file</p>
+<p>boot_data.user-data = vdu.cloud-init-file</p>
+<p>&#x652F;&#x6301;&#x914D;&#x7F6E;&#x9A71;&#x52A8;&#x5668;</p>
+<p>&#x5982;&#x679C;&#x5B58;&#x5728;vdu.supplemental-boot-data.boot-data-drive</p>
+<p>boot_data.boot-data-drive = true</p>
+<p>boot_data.config-files?</p>
+<h5 id="interface">interface</h5>
+<p>&#x901A;&#x8FC7;vdu.get(&quot;interface&quot;)&#x5FAA;&#x73AF;&#x83B7;&#x53D6;iface</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>uuid4()&#x968F;&#x673A;&#x6570;</td>
+</tr>
+<tr>
+<td>internal_name</td>
+<td>iface.name</td>
+</tr>
+<tr>
+<td>vm_id</td>
+<td>vdu.id</td>
+</tr>
+<tr>
+<td>vpci</td>
+<td>&#x5224;iface.get(&quot;virtual-interface&quot;).get(&quot;vpci&quot;)</td>
+</tr>
+<tr>
+<td>bw</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>mgmt/bridge/data</td>
+</tr>
+<tr>
+<td>model</td>
+<td></td>
+</tr>
+<tr>
+<td>external_name</td>
+<td></td>
+</tr>
+<tr>
+<td>port_security</td>
+<td></td>
+</tr>
+<tr>
+<td>net_id</td>
+<td></td>
+</tr>
+<tr>
+<td>ip_address</td>
+<td></td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>&#x5224;int(interface.get(&quot;position&quot;)) * 50</td>
+</tr>
+<tr>
+<td>mac</td>
+<td>&#x5224;interface.get(&quot;mac-address&quot;)</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>uuid_list.append(uuid)
+</code></pre><h5 id="flavor">flavor</h5>
+<p>&#x901A;&#x8FC7;vdu.vm-flavor&#x83B7;&#x53D6;flavor</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>vdu.name+&quot;-flv&quot;</td>
+</tr>
+<tr>
+<td>vcpus</td>
+<td>flavor.vcpu-count</td>
+</tr>
+<tr>
+<td>ram</td>
+<td>flavor.memory-mb</td>
+</tr>
+<tr>
+<td>disk</td>
+<td>flavor.storage-gb</td>
+</tr>
+<tr>
+<td>extended</td>
+<td></td>
+</tr>
+<tr>
+<td>uuid</td>
+</tr>
+</tbody>
+</table>
+<pre><code>uuid_list.append(uuid)
+</code></pre><h2 id="&#x6700;&#x540E;">&#x6700;&#x540E;</h2>
+<pre><code>mydb.new_rows(db_tables, uuid_list)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="new-nsd.html" class="navigation navigation-prev " aria-label="Previous page: 导入NSD">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ns_mano_client.html" class="navigation navigation-next " aria-label="Next page: Client简单说明">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"导入VNFD","level":"2.2.2.2","depth":3,"next":{"title":"Client简单说明","level":"2.2.2.3","depth":3,"path":"reference/osm/ro/ns_mano_client.md","ref":"reference/osm/ro/ns_mano_client.md","articles":[]},"previous":{"title":"导入NSD","level":"2.2.2.1","depth":3,"path":"reference/osm/ro/new-nsd.md","ref":"reference/osm/ro/new-nsd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"reference/osm/ro/new-vnfd.md","mtime":"2020-08-20T09:03:45.128Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-26T09:39:09.033Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

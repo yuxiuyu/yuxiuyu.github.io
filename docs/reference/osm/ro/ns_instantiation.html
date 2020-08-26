@@ -1,0 +1,1036 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>服务实例化过程变量说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vim_interaction.html" />
+    
+    
+    <link rel="prev" href="ns_new_instance.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GMANO入门</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../cloud/">
+            
+                <a href="../../cloud/">
+            
+                    
+                    CLOUD简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../cloud/juju/">
+            
+                <a href="../../cloud/juju/">
+            
+                    
+                    juju
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    OSM简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../model/">
+            
+                <a href="../model/">
+            
+                    
+                    OSM模型解读
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../model/descriptor/NSD.html">
+            
+                <a href="../model/descriptor/NSD.html">
+            
+                    
+                    NSD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="../model/descriptor/VNFD.html">
+            
+                <a href="../model/descriptor/VNFD.html">
+            
+                    
+                    VNFD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    RO模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="new-nsd.html">
+            
+                <a href="new-nsd.html">
+            
+                    
+                    导入NSD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2" data-path="new-vnfd.html">
+            
+                <a href="new-vnfd.html">
+            
+                    
+                    导入VNFD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3" data-path="ns_mano_client.html">
+            
+                <a href="ns_mano_client.html">
+            
+                    
+                    Client简单说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.4" data-path="ns_new_instance.html">
+            
+                <a href="ns_new_instance.html">
+            
+                    
+                    从零创建一个实例过程说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.2.5" data-path="ns_instantiation.html">
+            
+                <a href="ns_instantiation.html">
+            
+                    
+                    服务实例化过程变量说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.6" data-path="vim_interaction.html">
+            
+                <a href="vim_interaction.html">
+            
+                    
+                    同VIM交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    OSM参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >服务实例化过程变量说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="network-service-instantiation">Network Service Instantiation</h1>
+<h2 id="&#x53D8;&#x91CF;&#x5217;&#x8868;">&#x53D8;&#x91CF;&#x5217;&#x8868;</h2>
+<h3 id="instancedict">instance_dict</h3>
+<p>&#x5F00;&#x901A;&#x8BF7;&#x6C42;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<h4 id="instancedictnetworks">instance_dict.networks</h4>
+<p>&#x8BF7;&#x6C42;&#x5305;&#x542B;&#x7684;network&#x5217;&#x8868;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sites</td>
+<td>network&#x90E8;&#x7F72;&#x7684;&#x7AD9;&#x70B9;&#x3002;&#x6BCF;&#x4E2A;site&#x6307;&#x5411;&#x4E00;&#x4E2A;vim(<code>site.datacenter=dc.ID</code>)</td>
+</tr>
+<tr>
+<td>use-network</td>
+<td>&#x6240;&#x4F7F;&#x7528;&#x7684;&#x5176;&#x4ED6;&#x5B9E;&#x4F8B;&#x7684;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td>vim-network-name</td>
+<td></td>
+</tr>
+<tr>
+<td>vim-network-id</td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td></td>
+</tr>
+<tr>
+<td>ip-profile</td>
+<td></td>
+</tr>
+<tr>
+<td>provider-network</td>
+</tr>
+</tbody>
+</table>
+<h4 id="instancedictvnfs">instance_dict.vnfs</h4>
+<p>&#x8BF7;&#x6C42;&#x5305;&#x542B;&#x7684;vnf&#x5217;&#x8868;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>datacenter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scenariodict">scenarioDict</h3>
+<p>&#x5F00;&#x901A;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x7248;&#x3002;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x8BFB;&#x51FA;&#x6765;&#x540E;&#xFF0C; &#x5728;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F1A;&#x5C06;<code>instanceDict</code>&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x62F7;&#x8D1D;&#x5230;&#x672C;&#x5BF9;&#x8C61;&#x4E2D;&#x3002;</p>
+<h4 id="scenanriodictnets">scenanrioDict.nets</h4>
+<p>&#x6A21;&#x7248;&#x5B9A;&#x4E49;&#x7684;network&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;network(<code>sce_net</code>)&#x5305;&#x542B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td></td>
+</tr>
+<tr>
+<td>wim_account</td>
+<td></td>
+</tr>
+<tr>
+<td>ip_profile</td>
+<td></td>
+</tr>
+<tr>
+<td>provider_network</td>
+<td></td>
+</tr>
+<tr>
+<td>external</td>
+<td>&#x662F;&#x5426;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x5DF2;&#x6709;&#x7684;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td>vim_id</td>
+<td>&#x6307;&#x5B9A;&#x7684;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;&#x5728;vim&#x4E2D;&#x7684;id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="scenariodictvnfs">scenarioDict.vnfs</h4>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interfaces</td>
+<td>vnf&#x5185;&#x90E8;&#x7528;&#x4E8E;&#x8FDE;&#x63A5;&#x5176;&#x4ED6;vnf&#x7684;&#x7F51;&#x5361;,&#x5176;network&#x6307;&#x5411;sce_net</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x79DF;&#x6237;&#x76F8;&#x5173;">&#x79DF;&#x6237;&#x76F8;&#x5173;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tenant_id</td>
+<td>&#x7528;&#x6237;&#x4F20;&#x5165;&#x7684;<code>tenant.ID</code>&#xFF0C;&#x5373;:<code>nfvoTenant.id</code></td>
+</tr>
+<tr>
+<td>tenant</td>
+<td>&#x6839;&#x636E;teant_id&#x4ECE;<code>nfvo_tenants</code>&#x67E5;&#x8BE2;&#x5230;&#x7684;tenant&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>datacenter</td>
+<td>&#x7528;&#x6237;&#x4F20;&#x5165;&#x7684;dc&#x540D;&#x79F0;&#x6216;&#x8005;id</td>
+</tr>
+<tr>
+<td>default_wim_account</td>
+<td>&#x7528;&#x6237;&#x4F20;&#x5165;&#x7684;wim&#x8D26;&#x53F7;</td>
+</tr>
+<tr>
+<td>default_datacenter_id</td>
+<td>&#x6839;&#x636E;<code>datacenter</code>&#x4ECE;<code>datacenters</code>&#x67E5;&#x8BE2;&#x5F97;&#x5230;&#x5230;dc Id</td>
+</tr>
+<tr>
+<td>vim</td>
+<td>&#x6839;&#x636E;<code>datacenter</code>&#x4ECE;<code>datacenters</code>&#x67E5;&#x8BE2;&#x5F97;&#x5230;&#x5230;dc&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>myvims</td>
+<td>dc.ID --&gt; dc</td>
+</tr>
+<tr>
+<td>myvim_threads_id</td>
+<td>dc.ID --&gt; vimTenant.id</td>
+</tr>
+</tbody>
+</table>
+<h3 id="instance&#x76F8;&#x5173;">instance&#x76F8;&#x5173;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cloud_config</td>
+<td>&#x5F00;&#x901A;ns/vnf&#x5B9E;&#x4F8B;&#x65F6;&#x4F7F;&#x7528;&#x7684;cloud_config&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>db_instance_scenario</td>
+<td>&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>uuid_list</td>
+<td>&#x6240;&#x6709;&#x65B0;&#x5EFA;instance&#x7684;uuid</td>
+</tr>
+<tr>
+<td>db_instarnce_nets</td>
+<td>&#x6240;&#x6709;&#x88AB;&#x521B;&#x5EFA;&#x7684;network</td>
+</tr>
+<tr>
+<td>db_ip_profiles</td>
+</tr>
+</tbody>
+</table>
+<h3 id="actiontask&#x76F8;&#x5173;">action/task&#x76F8;&#x5173;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rollbackList</td>
+<td>????</td>
+</tr>
+<tr>
+<td>db_instance_action</td>
+<td>action&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;<code>instance_id</code>&#x5173;&#x8054;&#x5230;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;</td>
+</tr>
+<tr>
+<td>db_vim_actions</td>
+<td>&#x6240;&#x6709;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x4E2D;&#x65B0;&#x5EFA;&#x7684;&#x4EFB;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8FC7;&#x7A0B;">&#x8FC7;&#x7A0B;</h2>
+<h3 id="&#x83B7;&#x53D6;&#x5F00;&#x901A;&#x4F7F;&#x7528;&#x7684;&#x7F3A;&#x7701;dc&#x53CA;tenant">&#x83B7;&#x53D6;&#x5F00;&#x901A;&#x4F7F;&#x7528;&#x7684;&#x7F3A;&#x7701;DC&#x53CA;Tenant</h3>
+<h3 id="&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x83B7;&#x53D6;&#x5F00;&#x901A;&#x6307;&#x5B9A;&#x7684;descriptor---scenariodict">&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x83B7;&#x53D6;&#x5F00;&#x901A;&#x6307;&#x5B9A;&#x7684;descriptor---<code>scenarioDict</code></h3>
+<p>&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;<code>scenario</code>&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#xFF1A;<code>scenarioDict</code>&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;dbinstancescenario&#x548C;dbinstanceaction&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;<code>db_instance_scenario</code>&#x548C;<code>db_instance_action</code>&#x5BF9;&#x8C61;</h3>
+<h3 id="&#x6821;&#x9A8C;&#x5F00;&#x901A;&#x4F20;&#x5165;&#x7684;&#x7F51;&#x7EDC;&#x53C2;&#x6570;">&#x6821;&#x9A8C;&#x5F00;&#x901A;&#x4F20;&#x5165;&#x7684;&#x7F51;&#x7EDC;&#x53C2;&#x6570;</h3>
+<p>&#x6821;&#x9A8C;&#x5F00;&#x901A;&#x9700;&#x8981;&#x7684;&#x7F51;&#x7EDC;(<code>instance_dict.networks</code>)&#x662F;&#x5426;&#x5728;&#x6A21;&#x7248;&#x4E2D;&#x6709;&#x5B9A;&#x4E49;(<code>scenarioDict.nets</code>)&#xFF1B;
+&#x7136;&#x540E;&#x628A;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x590D;&#x5236;&#x5230;&#x6A21;&#x7248;&#x4E2D;&#xFF1B;</p>
+<h3 id="&#x6821;&#x9A8C;&#x5F00;&#x901A;&#x4F20;&#x5165;&#x7684;vnf&#x53C2;&#x6570;">&#x6821;&#x9A8C;&#x5F00;&#x901A;&#x4F20;&#x5165;&#x7684;vnf&#x53C2;&#x6570;</h3>
+<p>&#x6821;&#x9A8C;vnf&#x9700;&#x8981;&#x7684;&#x7F51;&#x7EDC;&#x3001;vdu&#x662F;&#x5426;&#x5728;&#x6A21;&#x7248;&#x4E2D;&#x6709;&#x5BF9;&#x5E94;&#x63CF;&#x8FF0;&#xFF1B;
+&#x7136;&#x540E;&#x628A;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x590D;&#x5236;&#x5230;&#x6A21;&#x7248;&#x4E2D;&#x3002;</p>
+<h3 id="&#x5728;vim&#x4E2D;&#x521B;&#x5EFA;scenet">&#x5728;vim&#x4E2D;&#x521B;&#x5EFA;sce_net</h3>
+<h4 id="scenet&#x53D8;&#x91CF;">sce_net::&#x53D8;&#x91CF;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number_mgmt_networks</td>
+<td>&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x7684;&#x7BA1;&#x7406;&#x7F51;&#x7EDC;&#x4E2A;&#x6570;&#x3002;&#x5982;&#x679C;<code>sce_net.external</code>&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x8BE5;&#x7F51;&#x7EDC;&#x662F;&#x7BA1;&#x7406;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td>sce_net</td>
+<td>&#x7F51;&#x7EDC;&#x6A21;&#x7248;&#xFF1A;<code>scenarioDict.nets</code></td>
+</tr>
+<tr>
+<td>descriptor_net</td>
+<td>&#x7F51;&#x7EDC;&#x5F00;&#x901A;&#x8BF7;&#x6C42;&#xFF1A;<code>instance_dict.networks</code></td>
+</tr>
+<tr>
+<td>use_network</td>
+<td><code>descriptor_net</code>&#x4F9D;&#x8D56;&#x7684;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;&#x5B9E;&#x4F8B;</td>
+</tr>
+<tr>
+<td>involved_datacenters</td>
+<td>&#x7F51;&#x7EDC;&#x4F9D;&#x8D56;&#x7684;vnf&#x6240;&#x5728;&#x7684;DC&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>target_wim_account</td>
+<td>&#x5F00;&#x901A;&#x7F51;&#x7EDC;&#x6240;&#x8981;&#x7684;wim&#x8D26;&#x53F7;</td>
+</tr>
+<tr>
+<td>sce_net2instance</td>
+<td>sce_net.uuid --&gt; (dc.uuid --&gt; instance_net.uuid)</td>
+</tr>
+<tr>
+<td>sce_net2wiminstance</td>
+<td>sce_net.uuid --&gt; (dc.uuid --&gt; )</td>
+</tr>
+<tr>
+<td>net2task_id</td>
+<td>sce_net.uuid --&gt;</td>
+</tr>
+<tr>
+<td>wim_usage</td>
+<td>sce_net.uuid --&gt; bool/wimAccount.uuid, &#x7F51;&#x7EDC;&#x5F00;&#x901A;&#x4F7F;&#x7528;&#x7684;wim</td>
+</tr>
+<tr>
+<td>wim_account</td>
+<td>&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#x5F00;&#x901A;&#x9700;&#x8981;&#x7684;wim</td>
+</tr>
+<tr>
+<td>netmap_use</td>
+<td><code>descriptor_net.site</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#xFF0C;&#x8868;&#x793A;&#x5728;&#x8BE5;&#x7AD9;&#x70B9;&#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x6307;&#x5411;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;&#x7684;ID&#x6216;&#x8005;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>netmap_create <code>descriptor_net.site</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#xFF0C;&#x8868;&#x793A;&#x5728;&#x8BE5;&#x7AD9;&#x70B9;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x8868;&#x793A;&#x7F51;&#x7EDC;&#x7684;&#x5E95;&#x5C42;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>net_type</td>
+<td>&#x8981;&#x521B;&#x5EFA;&#x7684;&#x7F51;&#x7EDC;&#x7684;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>net_vim_name</td>
+<td>&#x7F51;&#x7EDC;&#x5728;vim&#x4E2D;&#x7684;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>lookfor_filter</td>
+<td>&#x7528;&#x4E8E;&#x67E5;&#x627E;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;<code>id</code>,<code>name</code>,<code>status</code>&#x7B49;</td>
+</tr>
+<tr>
+<td>net_name</td>
+<td>&#x8981;&#x521B;&#x5EFA;&#x7684;&#x7F51;&#x7EDC;&#x7684;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>create_network</td>
+<td>&#x662F;&#x5426;&#x8981;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td>lookfor_network</td>
+<td>&#x662F;&#x5426;&#x8981;&#x67E5;&#x627E;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td>task_extra</td>
+<td>&#x4EFB;&#x52A1;&#x7684;&#x989D;&#x5916;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;params</td>
+</tr>
+<tr>
+<td>related_network</td>
+<td>&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#x4F9D;&#x8D56;&#x53E6;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x65F6;&#xFF0C;&#x6307;&#x5411;&#x8BE5;&#x7F51;&#x7EDC;&#x7684;uuid&#xFF1B;&#x5426;&#x5219;&#x6307;&#x5411;&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#x7684;uuid</td>
+</tr>
+<tr>
+<td>db_instance_wim_nets</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5728;vim&#x4E2D;&#x521B;&#x5EFA;vnf">&#x5728;vim&#x4E2D;&#x521B;&#x5EFA;VNF</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sce_vnf</td>
+<td>vnf&#x5F00;&#x901A;&#x5BF9;&#x8C61;&#xFF0C;&#x5408;&#x5E76;&#x4E86;&#x5BF9;&#x5E94;vnf&#x7684;&#x6A21;&#x7248;&#x548C;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td>sce_vnf.mgmt_access</td>
+<td>vnf&#x6A21;&#x677F;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x7BA1;&#x7406;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;</td>
+</tr>
+<tr>
+<td>RO_pub_key</td>
+<td><code>nfvoTenant</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x8868;&#x793A;&#x76F8;&#x5E94;tenant&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x7528;&#x4E8E;&#x5F00;&#x901A;&#x540E;osm&#x5BF9;vnf&#x7684;&#x7BA1;&#x7406;</td>
+</tr>
+<tr>
+<td>vim</td>
+<td>dc</td>
+</tr>
+<tr>
+<td>datacenter_id</td>
+<td></td>
+</tr>
+<tr>
+<td>myvim_thread_id</td>
+<td>dc.Tenant.id</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x521B;&#x5EFA;vnf&#x5185;&#x90E8;&#x7F51;&#x7EDC;">&#x521B;&#x5EFA;vnf&#x5185;&#x90E8;&#x7F51;&#x7EDC;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vnf_net2instance</td>
+<td><code>sce_vnf.uuid</code> --&gt; <code>sce_vnf.net.uuid</code> --&gt; <code>net.uuid</code>//</td>
+</tr>
+<tr>
+<td>vnf_net2wim_instance</td>
+<td></td>
+</tr>
+<tr>
+<td>net2task_id</td>
+<td><code>sce_vnf.uuid</code> --&gt; <code>sce_vnf.net.uuid</code> -&gt; <code>task_index</code></td>
+</tr>
+<tr>
+<td>net</td>
+<td>&#x5F85;&#x5F00;&#x901A;&#x7684;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td>net_name</td>
+<td></td>
+</tr>
+<tr>
+<td>net_type</td>
+<td></td>
+</tr>
+<tr>
+<td>lookfor_filter</td>
+<td>&#x67E5;&#x627E;&#x5DF2;&#x6709;&#x7F51;&#x7EDC;&#x7684;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>task_action</td>
+<td><code>find</code>(&#x5982;&#x679C;<code>net</code>&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>vim_network_name</code>) or <code>create</code>&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7F51;&#x7EDC;&#xFF09;</td>
+</tr>
+<tr>
+<td>task_extra</td>
+<td><code>lookfor_filter</code>(&#x5982;&#x679C;<code>task_action=find</code>)&#x6216;&#x8005;<code>net_name + net_type + net.ip_profile</code>(&#x5982;&#x679C;<code>task_action=create</code>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x673A;">&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x673A;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ssh_access</td>
+<td><code>sce_vnf[&apos;mgmt_access&apos;].get(&apos;config-access&apos;, {}).get(&apos;ssh-access&apos;)</code></td>
+</tr>
+<tr>
+<td>vnf_availability_zones</td>
+<td></td>
+</tr>
+<tr>
+<td>vm</td>
+<td>&#x521D;&#x59CB;&#x8BBE;&#x7F6E;&#x4E3A;vm&#x6A21;&#x7248;(sce_vnf.vms)&#xFF0C;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x8F85;&#x52A9;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td>myVMDict</td>
+<td>&#x4F20;&#x9012;&#x5230;vim&#x7684;&#x865A;&#x62DF;&#x673A;&#x521B;&#x5EFA;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>image_dict</td>
+<td>&#x4ECE;&#x6570;&#x636E;&#x5E93;(<code>images</code>)&#x6839;&#x636E;<code>vm.image_id</code>&#x5F97;&#x5230;&#x7684;image&#x5BF9;&#x8C61;(&#x8BF4;&#x660E;image&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E8E;&#x7CFB;&#x7EDF;&#x4E2D;)</td>
+</tr>
+<tr>
+<td>image_id</td>
+<td>image&#x5728;vim&#x5BF9;&#x5E94;&#x7684;id</td>
+</tr>
+<tr>
+<td>flavor_dict</td>
+<td>&#x4ECE;&#x6570;&#x636E;&#x5E93;(<code>flavors</code>)&#x6839;&#x636E;<code>vm.flavlor_id</code>&#x5F97;&#x5230;&#x7684;flavor&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>myVMDict.networks</td>
+<td>&#x865A;&#x62DF;&#x673A;&#x7684;&#x7F51;&#x5361;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>myVMDict.imageRef</td>
+<td></td>
+</tr>
+<tr>
+<td>myVMDict.flavorRef</td>
+<td></td>
+</tr>
+<tr>
+<td>is_management_vm</td>
+<td>&#x5F53;&#x524D;vm&#x662F;&#x5426;&#x4E3A;vnf&#x7684;&#x7BA1;&#x7406;&#x8282;&#x70B9;</td>
+</tr>
+<tr>
+<td>cloud_config_vm</td>
+<td></td>
+</tr>
+<tr>
+<td>av_index</td>
+</tr>
+</tbody>
+</table>
+<h5 id="&#x521B;&#x5EFA;&#x4F7F;&#x7528;&#x955C;&#x50CF;">&#x521B;&#x5EFA;/&#x4F7F;&#x7528;&#x955C;&#x50CF;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>image_mano_id</td>
+<td></td>
+</tr>
+<tr>
+<td>datacenter_vim_id</td>
+<td>dc.tenantId</td>
+</tr>
+<tr>
+<td>image_db</td>
+<td><code>datacenter_images</code>&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x662F;ro&#x7684;image&#x8BB0;&#x5F55;&#x5728;dc&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>image_vim_id</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>&#x6839;&#x636E;<code>image_dict.location</code>&#x6216;&#x8005;<code>image_dict.universal_name</code>&#x53BB;vim&#x67E5;&#x627E;&#x5BF9;&#x5E94;&#x7684;image&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x67E5;&#x5230;&#xFF0C;&#x5219;&#x6839;&#x636E;<code>image_dict</code>&#x5728;vim&#x521B;&#x5EFA;&#x4E00;&#x4E2A;image&#xFF0C;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5728;<code>datacenter_images</code>&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x6761;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#xFF1B;</li>
+<li>&#x8FD4;&#x56DE;&#x67E5;&#x627E;&#x5230;/&#x6216;&#x65B0;&#x521B;&#x5EFA;&#x7684;image&#x7684;vim_id</li>
+</ol>
+<h5 id="&#x521B;&#x5EFA;&#x4F7F;&#x7528;flavor">&#x521B;&#x5EFA;/&#x4F7F;&#x7528;flavor</h5>
+<ol>
+<li>&#x6839;&#x636E;<code>flavor_dict.uuid</code>&#x67E5;&#x627E;<code>datacenters_flavors</code>&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#xFF1A;<code>flavor_db</code>;</li>
+<li>&#x5982;&#x679C;<code>flavlor_db</code>&#x5B58;&#x5728;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x6839;&#x636E;<code>flavor_db.vim_id</code>&#x5728;vim&#x4E2D;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;flavor&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#xFF1B;</li>
+<li>&#x5426;&#x5219;&#xFF0C;&#x9996;&#x5148;&#x67E5;&#x627E;<code>flavor_dict</code>&#x5728;vim&#x7684;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x5728;vim&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#xFF1B;</li>
+<li>&#x67E5;&#x627E;&#x6210;&#x529F;&#x6216;&#x8005;&#x521B;&#x5EFA;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x4FEE;&#x6539;<code>datacenter_flvor</code>&#x7684;vim_id&#x6216;&#x8005;&#x521B;&#x5EFA;&#x4E00;&#x6761;&#x65B0;&#x7684;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#xFF1B;</li>
+<li>&#x8FD4;&#x56DE;&#x67E5;&#x627E;&#x5230;/&#x6216;&#x65B0;&#x521B;&#x5EFA;&#x7684;flavor&#x7684;vim_id</li>
+</ol>
+<h5 id="&#x521B;&#x5EFA;&#x901A;&#x7528;&#x7F51;&#x5361;&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;&#x901A;&#x7528;&#x7F51;&#x5361;&#x5BF9;&#x8C61;</h5>
+<p>&#x4E00;&#x4E2A;vm&#x53EF;&#x80FD;&#x5BF9;&#x5E94;&#x82E5;&#x5E72;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x5177;&#x4F53;&#x7684;&#x865A;&#x62DF;&#x673A;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7F51;&#x5361;&#x6A21;&#x7248;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x521B;&#x5EFA;&#x901A;&#x7528;&#x7F51;&#x5361;&#x5BF9;&#x8C61;&#x3002;
+&#x53EA;&#x6709;&#x5728;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x673A;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x901A;&#x7528;&#x7F51;&#x5361;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x6210;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x7F51;&#x5361;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iface</td>
+<td>&#x5F85;&#x521B;&#x5EFA;&#x7684;&#x7F51;&#x5361;&#x7684;&#x6A21;&#x7248;. <code>vm.interfaces</code></td>
+</tr>
+<tr>
+<td>netDict</td>
+<td>&#x5F85;&#x521B;&#x5EFA;&#x7684;&#x7F51;&#x5361;</td>
+</tr>
+<tr>
+<td>netDict.type</td>
+<td>PF(passthrough), VF(siov), VFNotShared(), Virtual</td>
+</tr>
+<tr>
+<td>netDict.use</td>
+<td>&#x7528;&#x9014; (data/mgmt)</td>
+</tr>
+<tr>
+<td>netDict.mac_address/floating_ip/port_security</td>
+<td></td>
+</tr>
+<tr>
+<td>netDict.net_id</td>
+<td>&#x4EC5;&#x4EC5;&#x662F;&#x4E2A;&#x6807;&#x8BC6;&#xFF0C;&#x7B49;&#x4E8E;&#x8BE5;&#x7F51;&#x5361;&#x5173;&#x8054;&#x7F51;&#x7EDC;&#x7684;&#x5BF9;&#x5E94;&#x4EFB;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5BF9;vdu&#x5B9A;&#x4E49;&#x7684;&#x6BCF;&#x4E00;&#x5757;&#x7F51;&#x5361;&#xFF1A;</p>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#xFF1B;</li>
+<li>&#x6839;&#x636E;&#x7F51;&#x5361;&#x5173;&#x8054;&#x7F51;&#x7EDC;&#xFF0C;&#x627E;&#x5230;&#x8BE5;&#x7F51;&#x7EDC;&#x5BF9;&#x5E94;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x628A;&#x8BE5;&#x4EFB;&#x52A1;&#x4F5C;&#x4E3A;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x673A;&#x4F9D;&#x8D56;&#x7684;&#x4EFB;&#x52A1;&#xFF1B;</li>
+<li>&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#x6DFB;&#x52A0;&#x5230;<code>db_vm_ifaces</code></li>
+</ol>
+<h5 id="&#x8BBE;&#x7F6E;clooud-config">&#x8BBE;&#x7F6E;clooud-config</h5>
+<h5 id="&#x521B;&#x5EFA;vm">&#x521B;&#x5EFA;vm</h5>
+<p>&#x6839;&#x636E;<code>vm.count</code>&#xFF0C;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x6570;&#x91CF;&#x7684;&#x865A;&#x62DF;&#x673A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<ol>
+<li>&#x786E;&#x5B9A;&#x5BF9;&#x5E94;&#x7684;&#x4EFB;&#x52A1;&#x7684;&#x53C2;&#x6570;(<code>task_params</code>)&#xFF1A;</li>
+</ol>
+<pre><code class="lang-python">task_params = (vm_name, myVMDict[<span class="hljs-string">&apos;description&apos;</span>], myVMDict.get(<span class="hljs-string">&apos;start&apos;</span>, <span class="hljs-keyword">None</span>),
+                           myVMDict[<span class="hljs-string">&apos;imageRef&apos;</span>], myVMDict[<span class="hljs-string">&apos;flavorRef&apos;</span>], myVMDict[<span class="hljs-string">&apos;networks&apos;</span>], cloud_config_vm,
+                           myVMDict[<span class="hljs-string">&apos;disks&apos;</span>], av_index, vnf_availability_zones)
+</code></pre>
+<ol>
+<li><p>&#x6839;&#x636E;<code>db_vm_ifaces</code>&#x521B;&#x5EFA;&#x8BE5;&#x865A;&#x62DF;&#x673A;&#x7684;&#x7F51;&#x5361;&#xFF0C;&#x7F51;&#x5361;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;<code>db_instance_interfaces</code></p>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;&#x4EFB;&#x52A1;</p>
+</li>
+</ol>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h3 id="osm-usage">OSM Usage</h3>
+<p>&#x8FD9;&#x4E2A;<a href="https://osm.etsi.org/docs/user-guide/05-osm-usage.html" target="_blank">&#x9875;&#x9762;</a>&#x4ECB;&#x7ECD;&#x4E86;&#x521B;&#x5EFA;/&#x7BA1;&#x7406;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x7684;&#x4E00;&#x4E9B;&#x573A;&#x666F;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x7406;&#x89E3;<code>cloud-config</code>&#xFF0C;<code>instantiation-parameter</code>&#x7684;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="vnf-onboarding-guide-day-0">VNF Onboarding guide (day-0)</h3>
+<p><a href="https://osm.etsi.org/docs/vnf-onboarding-guidelines/02-day0.html" target="_blank">VNF OnBoarding Day-0</a>&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x521B;&#x5EFA;/&#x4FEE;&#x6539;/&#x6D4B;&#x8BD5;vnfd package</p>
+<p>Remember the objectives of this phase(day-0):
+&gt;</p>
+<blockquote>
+<ul>
+<li><p>Instantiating the VNF with all the required VDUs, images, initial (unconfigured) state and NFVI requirements.</p>
+</li>
+<li><p>Making the VNF manageable from OSM (OSM should have SSH access to the management interfaces, for example)</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="vnf-onboarding-guide-day-1">VNF Onboarding guide (day-1)</h3>
+<p><a href="https://osm.etsi.org/docs/vnf-onboarding-guidelines/03-day1.html" target="_blank">VNF OnBoarding Day-1</a>&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x4FEE;&#x6539;vnfd&#xFF0C;&#x4F7F;&#x5F97;vnf&#x53EF;&#x4EE5;&#x5728;&#x88AB;&#x521B;&#x5EFA;&#x540E;&#x88AB;&#x81EA;&#x52A8;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>OSM&#x4E2D;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x76EE;&#x6807;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x6784;&#x5EFA;osm proxy charm&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5B83;&#x5305;&#x542B;&#x5728;descriptor&#x4E2D;&#x3002;</p>
+<h3 id="cloud-init">Cloud-init</h3>
+<p>Cloud-init&#x662F;&#x4E00;&#x4E2A;&#x5DE5;&#x4E1A;&#x6807;&#x51C6;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x901A;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x63CF;&#x8FF0;&#x914D;&#x7F6E;&#xFF0C;<a href="https://cloudinit.readthedocs.io/en/latest/&#x3002;" target="_blank">https://cloudinit.readthedocs.io/en/latest/&#x3002;</a>
+&#x901A;&#x8FC7;cloud-init&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;day-0&#x5B8C;&#x6210;vnf&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<blockquote>
+<p>Cloud-init is normally used for Day-0 operations like:</p>
+<ul>
+<li>Setting a default locale</li>
+<li>Setting an instance hostname</li>
+<li>Generating instance SSH private keys or defining passwords</li>
+<li>Adding SSH keys to a user&#x2019;s .ssh/authorized_keys so they can log in</li>
+<li>Setting up ephemeral mount points</li>
+<li>Configuring network devices</li>
+<li>Adding users and groups</li>
+<li>Adding files</li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ns_new_instance.html" class="navigation navigation-prev " aria-label="Previous page: 从零创建一个实例过程说明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vim_interaction.html" class="navigation navigation-next " aria-label="Next page: 同VIM交互">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"服务实例化过程变量说明","level":"2.2.2.5","depth":3,"next":{"title":"同VIM交互","level":"2.2.2.6","depth":3,"path":"reference/osm/ro/vim_interaction.md","ref":"reference/osm/ro/vim_interaction.md","articles":[]},"previous":{"title":"从零创建一个实例过程说明","level":"2.2.2.4","depth":3,"path":"reference/osm/ro/ns_new_instance.md","ref":"reference/osm/ro/ns_new_instance.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"reference/osm/ro/ns_instantiation.md","mtime":"2020-08-12T02:20:58.658Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-26T09:57:27.202Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
