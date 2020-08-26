@@ -1,6 +1,4 @@
 # Summary
 
 * [Introduction](README.md)
-* [Init](INIT.md)
-
-
+* [github+gitbook初始化](INIT.md)
