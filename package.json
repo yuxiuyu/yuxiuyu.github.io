@@ -1,0 +1,23 @@
+{
+  "name": "newgitbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "gitbook serve --open",
+    "build": "gitbook build ./ docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuxiuyu/yuxiuyu.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuxiuyu/yuxiuyu.github.io/issues"
+  },
+  "homepage": "https://github.com/yuxiuyu/yuxiuyu.github.io#readme"
+}
